@@ -24,7 +24,7 @@ cmake --build build -j
 ./build/bench_amq
 ```
 
-#### C. Run Micro-architectural Profiling (`perf`) - need update
+### C. Run Micro-architectural Profiling (`perf`) - need update
 
 On Linux:
 
