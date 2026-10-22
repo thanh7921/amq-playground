@@ -29,6 +29,8 @@ cmake --build build -j
 On Linux:
 
 ```bash
-perf stat -e cycles,instructions,L1-dcache-load-misses,branch-misses ./build/bench_amq --benchmark_filter=BM_LookupHit
-perf stat -e cycles,instructions,L1-dcache-load-misses,branch-misses ./build/bench_amq --benchmark_filter=BM_LookupMiss
+perf stat -e cycles,instructions,L1-dcache-load-misses,branch-misses ./build/bench_amq --benchmark_filter=BM_Standard_LookupHit
+perf stat -e cycles,instructions,L1-dcache-load-misses,branch-misses ./build/bench_amq --benchmark_filter=BM_Standard_LookupMiss
+perf stat -e cycles,instructions,L1-dcache-load-misses,branch-misses ./build/bench_amq --benchmark_filter=BM_Counting_LookupHit
+perf stat -e cycles,instructions,L1-dcache-load-misses,branch-misses ./build/bench_amq --benchmark_filter=BM_Counting_LookupHit
 ```
